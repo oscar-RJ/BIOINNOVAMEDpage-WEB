@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioInnovamed | Innovación Médica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #0055b8, #7b1fa2);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 90px;
+      transition: transform 0.3s ease;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .hero {
+      background: url('fondo.png') center center / cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #f3f3f3;
+      text-align: center;
+    }
+    .feature-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .feature-box:hover {
+      background-color: #e3f2fd;
+      transform: translateY(-5px);
+    }
+    .feature-box h3 {
+      color: #0055b8;
+    }
+    .seccion {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .seccion img {
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="bioinnovamed.PNG" alt="BioInnovamed Logo">
+    <nav>
+      <ul>
+        <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+        <li><a href="#" onclick="mostrarSeccion('servicios')">Ubicación</a></li>
+        <li><a href="#" onclick="mostrarSeccion('nosotros')">Nosotros</a></li>
+        <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Innovación Médica con Tecnología de Vanguardia</h1>
+    <p>Soluciones en monitoreo de signos vitales al alcance de todos</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>Frecuencia Cardíaca</h3>
+      <p>Monitorea el ritmo del corazón de forma precisa y continua.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Pruebas de Laboratorio</h3>
+      <p>Resultados rápidos y confiables con equipos de alta tecnología.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Revisión de Síntomas</h3>
+      <p>Evaluación clínica digital para detección temprana.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Asistencia Online</h3>
+      <p>Soporte personalizado y asesoramiento en línea.</p>
+    </div>
+  </section>
+
+  <!-- Sección de Inicio con imagen -->
+  <div id="inicio" class="seccion">
+    <h2>Bienvenido a BioInnovamed</h2>
+    <img src="marcog.jpg" alt="Imagen de inicio" />
+  </div>
+
+  <!-- Sección de Servicios (Ubicación) -->
+  <div id="servicios" class="seccion">
+    <h2>Ubicación</h2>
+    <p>La empresa operará desde su sede principal ubicada en:<br>
+      Av. Salud Integral #1234, Col. Lomas del Valle, Zapopan, Jalisco, C.P. 45129, México.</p>
+  </div>
+
+  <!-- Sección de Nosotros (Misión y Visión) -->
+  <div id="nosotros" class="seccion">
+    <h2>Misión y Visión</h2>
+    <h3>Misión</h3>
+    <p>Brindar soluciones tecnológicas innovadoras y accesibles en el área de la salud, mediante la comercialización de equipos médicos de alta calidad para el monitoreo de signos vitales, promoviendo una atención más eficiente, segura y humana.</p>
+    <h3>Visión</h3>
+    <p>Ser una empresa líder a nivel nacional e internacional en el suministro de tecnología médica, reconocida por su compromiso con la salud, la innovación constante y la excelencia en el servicio, contribuyendo a una mejora continua en la calidad de vida de las personas.</p>
+  </div>
+
+  <!-- Sección de Contacto -->
+  <div id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Correo: <strong>bioinnovamed22@gmail.com</strong></p>
+    <p>Teléfono: <strong>5617266700</strong></p>
+  </div>
+
+  <footer>
+    &copy; 2025 BioInnovamed. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.style.display = 'none';
+      });
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
